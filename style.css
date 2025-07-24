@@ -54,6 +54,37 @@ button {
   animation: spin 6s linear infinite;
 }
 
+/* ============= flower card =========== */
+.flower-card {
+  background-image: url(assets/deal-bloom.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.flower-card-2 {
+  background-image: url(assets/deal-zabo.png);
+
+  grid-column: span 2;
+  grid-row: span 2;
+
+  object-fit: cover;
+}
+
+.flower-card-3 {
+  background-image: url(assets/deal-ana.png);
+}
+
+.leatest {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -79,5 +110,21 @@ button {
 
   .badge-img {
     display: none;
+  }
+
+  /* =========== letest -======== */
+  .leatest {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .flower-card {
+    grid-row: span 1;
+    height: 200px;
+
+  }
+
+  .flower-card-2 {
+    grid-row: span 1;
   }
 }
