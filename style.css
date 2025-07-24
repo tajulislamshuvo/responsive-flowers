@@ -85,6 +85,12 @@ button {
   gap: 28px;
 }
 
+footer li {
+  color: rgba(107, 114, 128, 1);
+  line-height: 3;
+  font-size: 16px;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
