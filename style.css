@@ -21,12 +21,12 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem
+  gap: 4rem;
 }
 
 .plant img {
   max-width: 540px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .flower-store li {
@@ -41,8 +41,30 @@ button {
   padding: 1.5rem;
 }
 
-@media screen (max-width:576px) {
+.badge {
+  position: relative;
+}
+
+.badge-img {
+  position: absolute;
+  width: 280px;
+
+  top: -140px;
+  left: -240px;
+}
+
+@keyframe spin: {}
+
+@media screen and (max-width:576px) {
   .plant {
     flex-direction: column;
+  }
+
+  .plant img {
+    width: 100%;
+  }
+
+  .flower-store li {
+    font-size: 16px;
   }
 }
